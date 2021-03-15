@@ -28,4 +28,3 @@ jobs:
           server: 198.50.252.88
           username: Plagiatus.6097
           password: ${{ secrets.plag_ftp_password }}
-          local-dir: map_jam/
