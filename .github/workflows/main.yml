@@ -9,7 +9,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  # This workflow contains a single job called "upload"
   upload:
     name: Upload 🔼
     # The type of runner that the job will run on
@@ -21,11 +21,20 @@ jobs:
       - name: Get latest code 👀
         uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+      # syncs all the files to the FTP 
       - name: Sync files 📁
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: 198.50.252.88
-          username: Plagiatus.6097
+          server:  ${{ secrets.rcon_server }}
+          username:  ${{ secrets.plag_ftp_username }}
           password: ${{ secrets.plag_ftp_password }}
           server-dir: map_jam/
+      # informs the players and reloads
+      - name: RCON Connection 🔌
+        uses: Plagiatus/RCON-Action@v0.1
+        with:
+          server: ${{ secrets.rcon_server }}
+          port: ${{ secrets.rcon_port }}
+          password: ${{ secrets.rcon_password }}
+          commands: '["reload"]'
+          password: ${{ secrets.rcon_password }}
