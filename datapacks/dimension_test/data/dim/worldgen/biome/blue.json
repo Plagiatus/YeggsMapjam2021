@@ -1,0 +1,29 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.125,
+  "scale": 0.05,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "rain",
+  "category": "plains",
+  "effects": {
+    "sky_color": 6159800,
+    "fog_color": 3784813,
+    "water_color": 7213790,
+    "water_fog_color": 3871892,
+    "grass_color": 3269573,
+    "foliage_color": 1236641,
+    "grass_color_modifier": "none",
+    "particle": {
+      "options": {
+        "type": "minecraft:dolphin"
+      },
+      "probability": 0.01
+    }
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

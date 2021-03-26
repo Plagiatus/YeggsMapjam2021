@@ -1,9 +1,9 @@
 {
-  "type": "my_dimensions:void_type",
+  "type": "dim:void_type",
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "my_dimensions:test",
+      "biome": "dim:test2",
       "layers": [
         {
           "block": "minecraft:air",
