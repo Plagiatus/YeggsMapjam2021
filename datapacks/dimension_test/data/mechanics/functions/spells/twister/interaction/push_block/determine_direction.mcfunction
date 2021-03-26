@@ -9,4 +9,4 @@ execute if score @s value matches 3 run tellraw @a[tag=debug] {"text":"East"}
 execute if score @s value matches 4 run tellraw @a[tag=debug] {"text":"West"}
 
 execute if score @s value matches 1.. run tag @s add move 
-execute positioned ~ ~0.5 ~ run kill @e[distance=..0.1,limit=1,sort=nearest,tag=spell.twister]
+execute positioned ~ ~0.25 ~ run kill @e[distance=..0.1,limit=1,sort=nearest,tag=spell.twister]

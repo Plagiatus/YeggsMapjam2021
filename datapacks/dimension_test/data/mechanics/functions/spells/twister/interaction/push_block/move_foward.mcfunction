@@ -31,3 +31,4 @@ execute if score @s timer matches 1 run playsound block.grindstone.use block @a 
 execute if entity @s[tag=!move] run playsound minecraft:entity.villager.work_mason block @a ~ ~ ~ 1 1
 scoreboard players reset @s[tag=!move] value
 scoreboard players reset @s[tag=!move] timer
+execute as @s[tag=!move] at @s run function mechanics:spells/twister/interaction/push_block/center
