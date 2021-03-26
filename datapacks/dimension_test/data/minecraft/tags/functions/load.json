@@ -2,6 +2,7 @@
     "values": [
         "master:load",
         "ui:load",
-        "mechanics:load"
+        "mechanics:load",
+        "mana:load"
     ]
 }
