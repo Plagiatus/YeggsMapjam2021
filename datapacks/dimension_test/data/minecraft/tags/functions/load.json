@@ -1,5 +1,7 @@
 {
     "values": [
+        "master:load",
+        "ui:load",
         "mechanics:load"
     ]
 }
