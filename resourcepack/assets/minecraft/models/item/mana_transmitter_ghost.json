@@ -3,8 +3,7 @@
 	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "block/transmitter_ghost",
-		"particle": "block/polished_diorite"
+		"2": "block/transmitter_ghost"
 	},
 	"elements": [
 		{
@@ -148,8 +147,8 @@
 			}
 		},
 		{
-			"from": [4.89417, 19.47432, 7.52],
-			"to": [6.85417, 25.43432, 8.48],
+			"from": [4.91417, 19.49432, 7.54],
+			"to": [6.83417, 25.41432, 8.46],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16.87417, 26.95432, 0.5]},
 			"faces": {
 				"north": {"uv": [11.5, 5, 12, 6.5], "texture": "#2"},
