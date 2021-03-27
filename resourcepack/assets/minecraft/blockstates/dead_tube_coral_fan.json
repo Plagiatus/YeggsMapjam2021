@@ -1,0 +1,50 @@
+{
+    "variants": {
+      "": [
+        {
+          "model": "minecraft:block/moss_overlay"
+        },
+        {
+          "model": "minecraft:block/moss_overlay",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/moss_overlay",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/moss_overlay",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/moss_overlay2"
+        },
+        {
+          "model": "minecraft:block/moss_overlay2",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/moss_overlay2",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/moss_overlay2",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/moss_overlay3"
+        },
+        {
+          "model": "minecraft:block/moss_overlay3",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/moss_overlay3",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/moss_overlay3",
+          "y": 270
+        }
+      ]
+    }}

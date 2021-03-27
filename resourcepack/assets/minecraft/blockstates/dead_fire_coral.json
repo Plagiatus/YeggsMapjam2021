@@ -1,0 +1,20 @@
+{
+    "variants": {
+      "": [
+        {
+          "model": "minecraft:block/large_vase"
+        },
+        {
+          "model": "minecraft:block/large_vase",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/large_vase",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/large_vase",
+          "y": 270
+        }
+      ]
+    }}
