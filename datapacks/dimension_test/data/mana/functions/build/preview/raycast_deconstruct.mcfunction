@@ -6,4 +6,4 @@ execute unless entity @e[tag=machine,distance=..1.5] run title @s actionbar [{"c
 
 execute if score @s tmp matches 1.. unless entity @e[tag=machine,distance=..1.5] positioned ^ ^ ^.1 run function mana:build/preview/raycast_deconstruct
 
-execute if score @s tmp matches 0 run title @s actionbar [{"color":"red", "text":"Too far away."}]
+# execute if score @s tmp matches 0 run title @s actionbar [{"color":"red", "text":"."}]
