@@ -1,1 +1,1 @@
-execute align xyz run tp @s ~0.5 ~ ~0.5
+execute positioned ~ ~0.1 ~ align xyz run tp @s ~0.5 ~ ~0.5

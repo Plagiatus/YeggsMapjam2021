@@ -13,3 +13,5 @@ execute if score @s extr_timer >= @e[tag=extractor,limit=1,sort=nearest] extr_ti
 execute if score @s extr_timer >= @e[tag=extractor,limit=1,sort=nearest] extr_timer run particle witch ~ ~.5 ~ 0.25 0.25 0.25 1 25
 execute if score @s extr_timer >= @e[tag=extractor,limit=1,sort=nearest] extr_timer run kill @s
 execute if score @s extr_timer >= @e[tag=extractor,limit=1,sort=nearest] extr_timer run data merge entity @s {DeathTime:19}
+
+# tellraw @a [{"score":{"name": "@s", "objective": "extr_timer"}},",",{"score":{"name": "@e[tag=extractor,limit=1,sort=nearest]", "objective": "extr_timer"}}]
