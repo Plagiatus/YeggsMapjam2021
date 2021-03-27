@@ -1,13 +1,13 @@
-scoreboard players operation #tmp mana = #current mana
-scoreboard players operation #tmp mana *= #100 const
-scoreboard players operation #tmp mana /= #max mana
+scoreboard players operation #percent mana = #current mana
+scoreboard players operation #percent mana *= #100 const
+scoreboard players operation #percent mana /= #max mana
 
 scoreboard players set #danger mana 20
 
-execute if score #tmp mana < #danger mana run bossbar set mana:display_red visible true
-execute if score #tmp mana < #danger mana run bossbar set mana:display visible false
-execute if score #tmp mana >= #danger mana run bossbar set mana:display_red visible false
-execute if score #tmp mana >= #danger mana run bossbar set mana:display visible true
+execute if score #percent mana < #danger mana run bossbar set mana:display_red visible true
+execute if score #percent mana < #danger mana run bossbar set mana:display visible false
+execute if score #percent mana >= #danger mana run bossbar set mana:display_red visible false
+execute if score #percent mana >= #danger mana run bossbar set mana:display visible true
 bossbar set mana:display_red players @a
 bossbar set mana:display players @a
 

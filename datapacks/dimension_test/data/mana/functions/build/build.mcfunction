@@ -14,6 +14,7 @@ execute if score @s build matches 5 at @e[tag=preview,limit=1,sort=nearest] run 
 
 execute if score @s build matches 1 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","connector"],Duration:2000000000}
 execute if score @s build matches 2 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","mana_storage"],Duration:2000000000}
+execute if score @s build matches 2 at @e[tag=preview,limit=1,sort=nearest] run summon armor_stand ~ ~ ~ {Tags:["mana_storage_display"],Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"white_stained_glass_pane",tag:{CustomModelData:5},Count:1b}]}
 execute if score @s build matches 3 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","mana_generator"],Duration:2000000000}
 execute if score @s build matches 4 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","extractor"],Duration:2000000000}
 execute if score @s build matches 5 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","chunk_loader"],Duration:2000000000}
