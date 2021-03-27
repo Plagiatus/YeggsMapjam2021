@@ -1,0 +1,1 @@
+execute as @e[type=sheep,tag=cloud_sheep,scores={timer=1..}] at @s run function mechanics:spells/water/interaction/sheep/main 

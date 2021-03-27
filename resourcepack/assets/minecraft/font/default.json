@@ -9,10 +9,38 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:bitmap/twister.png",
+            "file": "minecraft:bitmap/wind_spin/wind_stage0.png",
             "ascent": 12,
             "height": 24,
-            "chars": ["\uF001\uF002\uF003"]
+            "chars": ["\uF001"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:bitmap/wind_spin/wind_stage1.png",
+            "ascent": 12,
+            "height": 24,
+            "chars": ["\uF002"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:bitmap/wind_spin/wind_stage2.png",
+            "ascent": 12,
+            "height": 24,
+            "chars": ["\uF003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:bitmap/wind_spin/wind_stage3.png",
+            "ascent": 12,
+            "height": 24,
+            "chars": ["\uF004"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:bitmap/wind_spin/wind_stage4.png",
+            "ascent": 12,
+            "height": 24,
+            "chars": ["\uF005"]
         }
 	]
 }

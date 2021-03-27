@@ -8,6 +8,9 @@ execute as @a[scores={cc=1,twister_timer=0}] if predicate mechanics:spells/twist
 execute as @e[type=armor_stand,tag=spell.twister] at @s run function mechanics:spells/twister/main
 execute as @e[type=armor_stand,tag=push_block] run function mechanics:spells/twister/interaction/push_block/main
 
+execute as @a[scores={cc=1}] if predicate mechanics:spells/water at @s anchored eyes run function mechanics:spells/water/init
+function mechanics:spells/water/main
+
 #casting cooldown
 scoreboard players remove @a[scores={twister_timer=1..}] twister_timer 1
 

@@ -1,0 +1,11 @@
+{
+	"parent": "item/generated",
+    "textures": {
+        "layer0": "item/leather_horse_armor"
+    },
+    "overrides": [
+        { "predicate": {"custom_model_data": 1}, "model": "custom/cloud_sheep_1"},
+        { "predicate": {"custom_model_data": 2}, "model": "custom/cloud_sheep_2"},
+        { "predicate": {"custom_model_data": 3}, "model": "custom/cloud_sheep_3"}
+    ]
+}
