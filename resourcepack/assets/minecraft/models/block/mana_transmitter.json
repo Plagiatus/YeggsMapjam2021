@@ -6,7 +6,7 @@
 	"textures": {
 		"1": "block/mana_generator",
 		"2": "block/mana_orb_build",
-		"particle": "block/mana_generator"
+		"particle": "block/polished_diorite"
 	},
 	"elements": [
 		{
