@@ -1,5 +1,6 @@
 scoreboard objectives add mana dummy
 scoreboard objectives add extr_timer dummy
+scoreboard objectives add cooldown dummy
 scoreboard objectives add lvl dummy
 
 execute unless score #total mana = #total mana run scoreboard players set #total mana 0

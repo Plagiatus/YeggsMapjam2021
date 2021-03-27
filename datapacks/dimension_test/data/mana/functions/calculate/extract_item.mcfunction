@@ -2,6 +2,7 @@ execute store result score @s tmp run data get entity @s Item.Count
 
 # blacklist
 tag @s[tag=!blacklist,nbt={Item:{id:"minecraft:iron_axe"}}] add blacklist
+tag @s[tag=!blacklist,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}] add blacklist
 
 # multipliers
 
