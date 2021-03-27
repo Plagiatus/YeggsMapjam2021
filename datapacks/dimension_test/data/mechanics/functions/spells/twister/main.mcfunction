@@ -1,10 +1,11 @@
 #detect pushable block
-execute positioned ~ ~-0.25 ~ as @e[distance=..0.75,type=armor_stand,tag=push_block,tag=!move,limit=1,sort=nearest] run function mechanics:spells/twister/interaction/push_block/determine_direction
+execute positioned ~ ~-0.25 ~ as @e[distance=..0.75,type=armor_stand,tag=push_block,tag=!move,tag=!move_up,tag=!move_down,limit=1,sort=nearest] run function mechanics:spells/twister/interaction/push_block/determine_direction
+execute positioned ~ ~-0.25 ~ if entity @e[distance=..0.75,type=armor_stand,tag=push_block,limit=1] run function mechanics:spells/twister/kill
 
 #Sound
 scoreboard players add @s timer 1
 execute if score @s timer matches 1 run stopsound @a * minecraft:item.elytra.flying
-execute if score @s timer matches 1 run playsound minecraft:item.elytra.flying player @a ~ ~ ~ 0.25 1.5 0.25
+execute if score @s timer matches 1 run playsound minecraft:item.elytra.flying player @a[distance=..50] ~ ~ ~ 0.25 1.5 0.25
 
 execute if score @s timer matches 1 run scoreboard players set @s timer 11
 

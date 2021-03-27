@@ -1,20 +1,27 @@
-execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister if block ~ ~ ~0.51 air run tp @s ~ ~ ~0.25 
-execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister unless block ~ ~ ~0.51 air run tag @s remove move
-execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister if block ~ ~ ~-0.51 air run tp @s ~ ~ ~-0.25 
-execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister unless block ~ ~ ~-0.51 air run tag @s remove move
-execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister if block ~0.51 ~ ~ air run tp @s ~0.25 ~ ~ 
-execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister unless block ~0.51 ~ ~ air run tag @s remove move
-execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister if block ~-0.51 ~ ~ air run tp @s ~-0.25 ~ ~ 
-execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister unless block ~-0.51 ~ ~ air run tag @s remove move
+#execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister if block ~ ~ ~0.51 air run tp @s ~ ~ ~0.25 
+#execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister unless block ~ ~ ~0.51 air run tag @s remove move
+#execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister if block ~ ~ ~-0.51 air run tp @s ~ ~ ~-0.25 
+#execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister unless block ~ ~ ~-0.51 air run tag @s remove move
+#execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister if block ~0.51 ~ ~ air run tp @s ~0.25 ~ ~ 
+#execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister unless block ~0.51 ~ ~ air run tag @s remove move
+#execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister if block ~-0.51 ~ ~ air run tp @s ~-0.25 ~ ~ 
+#execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister unless block ~-0.51 ~ ~ air run tag @s remove move
 
-#execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister positioned ~ ~ ~0.51 if block ~ ~ ~ air unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tp @s ~ ~ ~0.25 
-#execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister positioned ~ ~ ~0.51 unless block ~ ~ ~ air if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
-#execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister positioned ~ ~ ~-0.51 if block ~ ~ ~ air unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tp @s ~ ~ ~-0.25 
-#execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister positioned ~ ~ ~-0.51 unless block ~ ~ ~ air if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
-#execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister positioned ~0.51 ~ ~ if block ~ ~ ~ air unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tp @s ~0.25 ~ ~ 
-#execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister positioned ~0.51 ~ ~ unless block ~ ~ ~ air if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
-#execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister positioned ~-0.51 ~ ~ if block ~ ~ ~ air unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tp @s ~-0.25 ~ ~ 
-#execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister positioned ~-0.51 ~ ~ unless block ~ ~ ~ air if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
+execute if score @s value matches 1 if block ~ ~ ~-0.51 #mechanics:twister if block ~ ~ ~0.51 air positioned ~ ~ ~1.01 unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] positioned ~ ~ ~-1.01 run tp @s ~ ~ ~0.25 
+execute if score @s value matches 1 positioned ~ ~ ~0.51 unless block ~ ~ ~ air run tag @s remove move
+execute if score @s value matches 1 positioned ~ ~ ~1.01 if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
+
+execute if score @s value matches 2 if block ~ ~ ~0.51 #mechanics:twister if block ~ ~ ~-0.51 air positioned ~ ~ ~-1.01 unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] positioned ~ ~ ~1.01 run tp @s ~ ~ ~-0.25 
+execute if score @s value matches 2 positioned ~ ~ ~-0.51 unless block ~ ~ ~ air run tag @s remove move
+execute if score @s value matches 2 positioned ~ ~ ~-1.01 if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
+
+execute if score @s value matches 3 if block ~-0.51 ~ ~ #mechanics:twister if block ~0.51 ~ ~ air positioned ~1.01 ~ ~ unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] positioned ~-1.01 ~ ~ run tp @s ~0.25 ~ ~ 
+execute if score @s value matches 3 positioned ~0.51 ~ ~ unless block ~ ~ ~ air run tag @s remove move
+execute if score @s value matches 3 positioned ~1.01 ~ ~ if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
+
+execute if score @s value matches 4 if block ~0.51 ~ ~ #mechanics:twister if block ~-0.51 ~ ~ air positioned ~-1.01 ~ ~ unless entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] positioned ~1.01 ~ ~ run tp @s ~-0.25 ~ ~ 
+execute if score @s value matches 4 positioned ~-0.51 ~ ~ unless block ~ ~ ~ air run tag @s remove move
+execute if score @s value matches 4 positioned ~-1.01 ~ ~ if entity @e[type=armor_stand,tag=push_block,limit=1,distance=..0.1] run tag @s remove move
 
 
 execute if score @s[tag=!on_ceiling] value matches 1 run particle minecraft:falling_dust light_gray_wool ~0.200 ~0.05 ~-0.48 0.25 0 0 1 0 force
