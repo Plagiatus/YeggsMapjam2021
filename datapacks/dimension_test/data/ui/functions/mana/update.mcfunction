@@ -16,4 +16,5 @@ execute store result bossbar mana:display_red value run scoreboard players get #
 execute store result bossbar mana:display max run scoreboard players get #max mana
 execute store result bossbar mana:display value run scoreboard players get #current mana
 
-bossbar set mana:display name [{"text":"Mana level: "}, {"score":{"name":"#current","objective":"mana"}}, "/", {"score":{"name":"#max","objective":"mana"}}]
+bossbar set mana:display name [{"text":"Mana "}, {"score":{"name":"#current","objective":"mana"}}, "/", {"score":{"name":"#max","objective":"mana"}}]
+bossbar set mana:display_red name [{"text":"Low Mana! "}, {"score":{"name":"#current","objective":"mana"}}, "/", {"score":{"name":"#max","objective":"mana"}}]
