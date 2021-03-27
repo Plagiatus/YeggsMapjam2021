@@ -5,6 +5,7 @@
     },
     "overrides": [
         { "predicate": {"custom_model_data": 1}, "model": "item/wand1"},
-        { "predicate": {"custom_model_data": 2}, "model": "item/build_wand"}
+        { "predicate": {"custom_model_data": 2}, "model": "item/build_wand"},
+        { "predicate": {"custom_model_data": 3}, "model": "item/gauntlet"}
     ]
 }

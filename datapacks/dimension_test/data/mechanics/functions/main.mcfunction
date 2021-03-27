@@ -1,3 +1,4 @@
+scoreboard players add @a gauntlet_timer 0
 scoreboard players add @a launch_timer 0
 scoreboard players add @a twister_timer 0
 
@@ -10,6 +11,10 @@ execute as @e[type=armor_stand,tag=push_block] run function mechanics:spells/twi
 
 execute as @a[scores={cc=1}] if predicate mechanics:spells/water at @s anchored eyes run function mechanics:spells/water/init
 function mechanics:spells/water/main
+
+execute as @a[scores={cc=1,gauntlet_timer=0}] if predicate mechanics:gauntlet at @s anchored eyes run function mechanics:gauntlet/smash/init
+execute as @a[tag=gauntlet_smash] at @s run function mechanics:gauntlet/smash/main
+
 
 #casting cooldown
 scoreboard players remove @a[scores={twister_timer=1..}] twister_timer 1

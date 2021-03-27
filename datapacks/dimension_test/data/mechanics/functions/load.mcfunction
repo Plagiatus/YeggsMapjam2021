@@ -3,7 +3,7 @@ scoreboard objectives add launch_timer dummy
 scoreboard players set #settings launch_timer 75
 scoreboard objectives add twister_timer dummy
 scoreboard players set #settings twister_timer 20
-
+scoreboard objectives add gauntlet_timer dummy
 
 #Other constants
 scoreboard players set #CloudSheep timer 550
