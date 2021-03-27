@@ -1,0 +1,35 @@
+{
+    "variants": {
+      "": [
+        {
+          "model": "minecraft:block/cute_pumpkin"
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin2"
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin2",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin2",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/cute_pumpkin2",
+          "y": 270
+        }
+      ]
+    }}

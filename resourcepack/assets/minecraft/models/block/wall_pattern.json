@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/wall_pattern",
+		"particle": "block/wall_pattern"
+	},
+	"elements": [
+		{
+			"from": [-8, 0, 15.8],
+			"to": [24, 32, 15.8],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [24, 0, 15.725]},
+			"faces": {
+				"north": {"uv": [0.032, 0.032, 15.968, 15.968], "texture": "#0"},
+				"east": {"uv": [0.032, 0.032, 0.032, 15.968], "texture": "#missing"},
+				"west": {"uv": [0.032, 0.032, 0.032, 15.968], "texture": "#missing"},
+				"up": {"uv": [0.032, 0.032, 0.032, 15.968], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [0.032, 0.032, 0.032, 15.968], "rotation": 270, "texture": "#missing"}
+			}
+		}
+	]
+}
