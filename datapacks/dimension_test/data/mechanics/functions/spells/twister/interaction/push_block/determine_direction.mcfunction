@@ -8,5 +8,5 @@ execute if score @s value matches 2 run tellraw @a[tag=debug] {"text":"North"}
 execute if score @s value matches 3 run tellraw @a[tag=debug] {"text":"East"}
 execute if score @s value matches 4 run tellraw @a[tag=debug] {"text":"West"}
 
-execute if score @s value matches 1.. run tag @s add move 
-execute positioned ~ ~0.25 ~ run kill @e[distance=..0.1,limit=1,sort=nearest,tag=spell.twister]
+execute if score @s value matches 1.. run tag @s add move
+execute positioned ~ ~0.25 ~ as @e[distance=..0.1,limit=1,sort=nearest,tag=spell.twister] run function mechanics:spells/twister/kill

@@ -1,0 +1,18 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:block/stone.png",
+            "ascent": -32676,
+            "height": -102,
+            "chars": ["\uE100"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:bitmap/twister.png",
+            "ascent": 12,
+            "height": 24,
+            "chars": ["\uF001\uF002\uF003"]
+        }
+	]
+}

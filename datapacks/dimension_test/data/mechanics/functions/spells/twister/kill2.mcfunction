@@ -1,0 +1,1 @@
+stopsound @a * minecraft:item.elytra.flying
