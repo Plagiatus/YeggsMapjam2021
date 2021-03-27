@@ -14,7 +14,7 @@ function mana:build/main
 
 # powering
 execute as @e[tag=connector,tag=connected] at @s run function mana:connector/display_range
-execute as @e[tag=generator] at @s run function mana:connector/display_generator_range
+execute as @e[tag=mana_generator] at @s run function mana:connector/display_generator_range
 
 
 

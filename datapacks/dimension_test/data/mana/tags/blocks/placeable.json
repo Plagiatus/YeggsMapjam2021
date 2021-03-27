@@ -3,6 +3,7 @@
         "stone",
         "andesite",
         "dirt",
-        "grass_block"
+        "grass_block",
+        "purpur_block"
     ]
 }
