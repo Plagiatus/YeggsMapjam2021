@@ -8,3 +8,6 @@ tag @e[tag=newConnected,tag=!connector] add connected
 tag @e[tag=newConnected] remove newConnected
 
 execute at @e[tag=machine,tag=!connected] run particle barrier ~ ~2 ~
+
+execute at @e[tag=chunk_loader,tag=!connected] run forceload remove ~ ~
+execute at @e[tag=chunk_loader,tag=connected] run forceload add ~ ~ ~ ~
