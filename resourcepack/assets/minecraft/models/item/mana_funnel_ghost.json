@@ -3,9 +3,9 @@
 	"parent": "block/block",
 	"texture_size": [112, 112],
 	"textures": {
-		"0": "block/generator_funnel",
-		"1": "block/manaportal",
-		"particle": "block/generator_funnel"
+		"0": "block/generator_funnel_ghost",
+		"1": "block/manaportal_ghost",
+		"particle": "block/generator_funnel_ghost"
 	},
 	"elements": [
 		{

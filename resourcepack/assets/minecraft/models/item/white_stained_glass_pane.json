@@ -8,6 +8,7 @@
         { "predicate": {"custom_model_data": 2}, "model": "item/mana_generator_ghost"},
         { "predicate": {"custom_model_data": 3}, "model": "item/mana_storage_ghost"},
         { "predicate": {"custom_model_data": 4}, "model": "item/mana_transmitter_ghost"},
-        { "predicate": {"custom_model_data": 5}, "model": "block/tank_inner_mana_liquid"}
+        { "predicate": {"custom_model_data": 5}, "model": "block/tank_inner_mana_liquid"},
+        { "predicate": {"custom_model_data": 6}, "model": "item/mana_funnel_ghost"}
     ]
 }

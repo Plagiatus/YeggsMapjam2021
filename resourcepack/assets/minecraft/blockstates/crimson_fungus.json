@@ -1,0 +1,20 @@
+{
+    "variants": {
+      "": [
+        {
+          "model": "minecraft:block/dim_portal_frame_off"
+        },
+        {
+          "model": "minecraft:block/dim_portal_frame_off",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/dim_portal_frame_off",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/dim_portal_frame_off",
+          "y": 270
+        }
+      ]
+    }}
