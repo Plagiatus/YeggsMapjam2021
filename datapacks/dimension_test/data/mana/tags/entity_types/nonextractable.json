@@ -3,6 +3,7 @@
         "area_effect_cloud",
         "armor_stand",
         "player",
-        "item"
+        "item",
+        "chest_minecart"
     ]
 }
