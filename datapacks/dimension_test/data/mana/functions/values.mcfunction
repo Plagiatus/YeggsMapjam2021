@@ -24,3 +24,6 @@ scoreboard players set @s[tag=extractor,scores={lvl=2}] mana 50
 scoreboard players set @s[tag=extractor,scores={lvl=0}] extr_timer 100
 scoreboard players set @s[tag=extractor,scores={lvl=1}] extr_timer 100
 scoreboard players set @s[tag=extractor,scores={lvl=2}] extr_timer 100
+
+# chunk loader
+scoreboard players set @s[tag=chunk_loader,scores={lvl=0}] mana 1
