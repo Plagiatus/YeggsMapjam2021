@@ -1,2 +1,1 @@
-execute align xyz positioned ~.5 ~ ~.5 run summon area_effect_cloud ~ ~ ~ {Duration:2000000000,Tags:["portal","machine"]}
-setblock ~ ~ ~ crimson_fungus
+execute align xyz positioned ~.5 ~ ~.5 run summon armor_stand ~ ~ ~ {Invisible:1b, Invulnerable:1b, Marker:1b, NoGravity: 1b, Tags:["portal","machine"],ArmorItems:[{},{},{},{id:"minecraft:crimson_fungus"}]}

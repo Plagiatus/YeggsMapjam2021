@@ -6,9 +6,11 @@
 execute as @e[tag=portal,tag=origin] run function mana:portal/check/connection
 execute if score #burnout cooldown matches 1.. run tag @e[tag=portal] remove connected
 
-execute as @e[tag=portal,tag=connected] at @s unless block ~ ~ ~ warped_fungus run setblock ~ ~ ~ warped_fungus
-execute as @e[tag=portal,tag=!connected] at @s unless block ~ ~ ~ crimson_fungus run setblock ~ ~ ~ crimson_fungus
+execute as @e[tag=portal,tag=connected] at @s unless data entity @s ArmorItems[{id:"minecraft:warped_fungus"}] run replaceitem entity @s armor.head warped_fungus
+execute as @e[tag=portal,tag=!connected] at @s unless data entity @s ArmorItems[{id:"minecraft:crimson_fungus"}] run replaceitem entity @s armor.head crimson_fungus
 
 # teleport
-execute as @a at @s if entity @e[tag=portal,tag=connected,distance=..1] run function mana:portal/check/teleportation
-execute as @a at @s unless entity @e[tag=portal,tag=connected,distance=..1] run scoreboard players set @s portal_cd 0
+tag @e remove in_portal
+execute at @e[tag=portal,tag=connected] run tag @e[type=!#mana:nonteleportable,distance=..1] add in_portal
+execute as @e[tag=in_portal] at @s run function mana:portal/check/teleportation
+execute as @e[tag=!in_portal,type=!#mana:nonteleportable] run scoreboard players set @s portal_cd 0

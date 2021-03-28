@@ -1,0 +1,29 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.125,
+  "scale": 0.05,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "rain",
+  "category": "plains",
+  "effects": {
+    "sky_color": 15573662,
+    "fog_color": 14062480,
+    "water_color": 16760250,
+    "water_fog_color": 13750737,
+    "grass_color": 16748682,
+    "foliage_color": 16748682,
+    "grass_color_modifier": "none",
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.01
+    }
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

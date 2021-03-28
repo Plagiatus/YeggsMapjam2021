@@ -1,0 +1,18 @@
+{
+  "type": "dim:void_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "dim:pink",
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 1
+        }
+      ],
+      "structures": {
+        "structures": {}
+      }
+    }
+  }
+}
