@@ -19,12 +19,6 @@ execute if score @s timer matches 17 run data merge entity @s {CustomName:'["",{
 
 execute if score @s timer matches 17.. run scoreboard players set @s timer 10
 
-
-#Puzzle stuff:
-execute as @e[type=area_effect_cloud,tag=puzzle_cam,limit=1,sort=nearest] run function mechanics:spells/twister/puzzle/cutscene
-
-
-
 #move block unless wall
 execute if block ^ ^0.25 ^0.5 #mechanics:twister run tp @s ^ ^ ^0.25
 execute unless block ^ ^0.25 ^0.5 #mechanics:twister run function mechanics:spells/twister/kill

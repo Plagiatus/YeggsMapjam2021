@@ -4,6 +4,7 @@
         "#minecraft:stairs",
         "#minecraft:slabs",
         "minecraft:purple_stained_glass",
-        "minecraft:tripwire"
+        "minecraft:tripwire",
+        "minecraft:gray_carpet"
     ]
 }
