@@ -48,13 +48,13 @@ execute if score @s[tag=!falling,tag=on_ceiling] value matches 4 run particle mi
 
 execute as @s[tag=falling,tag=!move] at @s run function mechanics:spells/twister/interaction/push_block/center
 execute unless score @s[tag=!falling] value matches 1.. run tag @s remove move
-tag @s remove falling
 tag @e[type=shulker] remove tmp
 
-execute if score @s timer matches 3.. run scoreboard players set @s timer 0
-scoreboard players add @s timer 1
-execute if entity @s[scores={timer=1,value=1..}] run playsound block.grindstone.use block @a ~ ~ ~ 1 1
+execute if score @s[tag=!falling] timer matches 3.. run scoreboard players set @s timer 0
+scoreboard players add @s[tag=!falling] timer 1
+execute if entity @s[tag=!falling,scores={timer=1,value=1..}] run playsound block.grindstone.use block @a ~ ~ ~ 1 1
 execute if entity @s[tag=!move] run playsound minecraft:entity.villager.work_mason block @a ~ ~ ~ 1 1
 scoreboard players reset @s[tag=!move] value
 scoreboard players reset @s[tag=!move] timer
 execute at @s[tag=!move] run function mechanics:spells/twister/interaction/push_block/center
+tag @s remove falling
