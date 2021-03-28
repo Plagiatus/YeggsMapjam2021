@@ -2,6 +2,8 @@
     "values": [
         "minecraft:air",
         "#minecraft:stairs",
-        "#minecraft:slabs"
+        "#minecraft:slabs",
+        "minecraft:purple_stained_glass",
+        "minecraft:tripwire"
     ]
 }
