@@ -1,3 +1,4 @@
+scoreboard players add @s portal_cd 0
 scoreboard players add @s[scores={portal_cd=0..}] portal_cd 1
 
 # particles, sounds, etc

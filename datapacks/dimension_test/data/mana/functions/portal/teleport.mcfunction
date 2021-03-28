@@ -1,5 +1,5 @@
 scoreboard players set @s portal_cd -1
-
+tag @s add tp_cd
 
 tag @s add tpme
 tag @e[tag=portal,limit=1,sort=nearest] add tp_origin

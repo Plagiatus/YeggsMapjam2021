@@ -12,5 +12,6 @@ execute as @e[tag=portal,tag=!connected] at @s unless data entity @s ArmorItems[
 # teleport
 tag @e remove in_portal
 execute at @e[tag=portal,tag=connected] run tag @e[type=!#mana:nonteleportable,distance=..1] add in_portal
-execute as @e[tag=in_portal] at @s run function mana:portal/check/teleportation
+execute as @e[tag=in_portal,tag=!tp_cd] at @s run function mana:portal/check/teleportation
 execute as @e[tag=!in_portal,type=!#mana:nonteleportable] run scoreboard players set @s portal_cd 0
+execute as @e[tag=!in_portal,type=!#mana:nonteleportable,tag=tp_cd] run tag @s remove tp_cd
