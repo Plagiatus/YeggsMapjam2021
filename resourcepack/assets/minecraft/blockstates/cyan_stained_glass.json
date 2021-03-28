@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/mana_crystal"
+      },
+      {
+        "model": "minecraft:block/mana_crystal",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/mana_crystal",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/mana_crystal",
+        "y": 270
+      }
+    ]
+  }}

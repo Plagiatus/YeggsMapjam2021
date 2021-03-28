@@ -44,14 +44,14 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:item/scute.png",
+            "file": "minecraft:bitmap/mana_icon.png",
             "ascent": 10,
             "height": 12,
             "chars": ["\uF006"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:block/oak_log.png",
+            "file": "minecraft:bitmap/log_icon.png",
             "ascent": 10,
             "height": 12,
             "chars": ["\uF007"]
