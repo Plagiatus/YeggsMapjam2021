@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:golden_pickaxe",
+                        "durability": 32
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "master:adventure_items/golden_pickaxe"
+    }
+}

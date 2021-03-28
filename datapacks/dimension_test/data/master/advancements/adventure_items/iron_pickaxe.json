@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_pickaxe",
+                        "durability": 250
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "master:adventure_items/iron_pickaxe"
+    }
+}

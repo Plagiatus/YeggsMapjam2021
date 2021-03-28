@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_pickaxe",
+                        "durability": 131
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "master:adventure_items/stone_pickaxe"
+    }
+}
