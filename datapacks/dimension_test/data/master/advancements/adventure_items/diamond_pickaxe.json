@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_pickaxe",
+                        "durability": 1561
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "master:adventure_items/diamond_pickaxe"
+    }
+}
