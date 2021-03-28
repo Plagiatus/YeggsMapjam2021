@@ -27,3 +27,8 @@ scoreboard players set @s[tag=extractor,scores={lvl=2}] extr_timer 100
 
 # chunk loader
 scoreboard players set @s[tag=chunk_loader,scores={lvl=0}] mana 1
+scoreboard players set @s[tag=chunk_loader,scores={lvl=0}] cooldown 1
+
+# portal
+scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=1}] mana 1
+scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=1}] cooldown 10

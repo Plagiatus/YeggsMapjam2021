@@ -24,3 +24,6 @@ scoreboard players operation #current mana < #max mana
 
 # ui
 function ui:mana/update
+
+# portals
+function mana:portal/main
