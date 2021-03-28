@@ -5,6 +5,8 @@ title @s[nbt={Dimension:"dim:pink"}] subtitle [{"text":"Where pigs fly","color":
 title @s[nbt={Dimension:"dim:pink"}] title [{"text":"Pink Dimension","color":"#ff908a"}]
 
 # other fixes
+gamemode adventure @s[nbt={Dimension:"minecraft:overworld"}] 
 
-execute as @s[nbt={Dimension:"dim:pink"}] at @s as @e[type=pig] at @s run data merge entity @s {DeathLootTable:"minecraft:empty"}
-execute as @s[nbt={Dimension:"dim:pink"}] at @s as @e[type=pig] at @s run kill @s[y=250,dy=10]
+execute as @s[nbt={Dimension:"dim:pink"}] at @s as @e[tag=makePig] at @s run data merge entity @s {DeathLootTable:"minecraft:empty"}
+execute as @s[nbt={Dimension:"dim:pink"}] at @s as @e[tag=makePig] at @s run kill @s[y=250,dy=10]
+gamemode survival @s[nbt={Dimension:"dim:pink"}]

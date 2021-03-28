@@ -5,6 +5,7 @@ scoreboard objectives add lvl dummy
 scoreboard objectives add build dummy
 scoreboard objectives add portal_id dummy
 scoreboard objectives add portal_cd dummy
+scoreboard objectives add coas_check dummy
 
 execute unless score #total mana = #total mana run scoreboard players set #total mana 0
 execute unless score #current mana = #current mana run scoreboard players set #current mana 0
