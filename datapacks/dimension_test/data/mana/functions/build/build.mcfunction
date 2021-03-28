@@ -19,9 +19,11 @@ execute if score @s build matches 3 at @e[tag=preview,limit=1,sort=nearest] run 
 execute if score @s build matches 4 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","extractor"],Duration:2000000000}
 execute if score @s build matches 5 at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~ ~ {Tags:["machine","new","chunk_loader"],Duration:2000000000}
 
+execute if score @s build matches 2.. at @e[tag=preview,limit=1,sort=nearest] run summon area_effect_cloud ~ ~1.5 ~ {Tags:["machine_display"],Duration:2000000000,CustomNameVisible:1b,CustomName:'" "'}
 
 scoreboard players set @e[tag=new] lvl 0
 execute as @e[tag=new] run function mana:values
+execute if score @s build matches 2.. as @e[tag=machine,tag=new,limit=1,sort=nearest] at @s run function mana:display/info
 tag @e[tag=new] remove new
 
 kill @e[tag=preview,limit=1,sort=nearest]

@@ -1,6 +1,7 @@
 # to connect two portals (use the portal/new function to make them), give them the same, unique portal_id score
 # give the one on the main island the "origin" tag, the one far away the "destination" tag
 # set the mana and the cooldown score in the mana:values function for the correct portal_id, to take effect on the mana consumption
+# lastly, run mana:display/info as the origin portal
 
 
 execute as @e[tag=portal,tag=origin] run function mana:portal/check/connection
