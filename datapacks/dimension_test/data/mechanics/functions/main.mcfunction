@@ -22,7 +22,7 @@ scoreboard players remove @a[scores={twister_timer=1..}] twister_timer 1
 scoreboard players reset @a cc
 
 #Puzzle stuff:
-execute as @e[type=area_effect_cloud,tag=puzzle_cam,limit=1,sort=nearest] run function mechanics:spells/twister/puzzle/cutscene
+execute as @e[type=area_effect_cloud,tag=puzzle_cam,limit=1,sort=nearest] at @s run function mechanics:spells/twister/puzzle/cutscene
 
 # dimensions specific mechanics
 execute in dim:pink run function mechanics:dimensions/pink/main

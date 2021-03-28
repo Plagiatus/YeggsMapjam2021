@@ -18,7 +18,7 @@ scoreboard players add @s gauntlet_timer 1
 tag @s remove tmp
 execute if score @s gauntlet_timer matches 11..49 unless block ~ ~-1 ~ #mechanics:gauntlet/bounce unless block ~ ~-1 ~ air run tag @s add tmp 
 execute if score @s[tag=tmp] timer matches 11..49 run scoreboard players set @s gauntlet_timer 50 
-execute if score @s[tag=tmp] timer matches 11..49 run playsound minecraft:entity.iron_golem.hurt master @s ~ ~ ~ 0.5 0
+execute if score @s[tag=tmp] timer matches 11..49 run playsound minecraft:entity.iron_golem.hurt master @a ~ ~ ~ 0.5 0
 execute if score @s gauntlet_timer matches 50 run effect clear @s levitation
 execute if score @s gauntlet_timer matches 60 run tag @s remove gauntlet_smash
 execute if score @s gauntlet_timer matches 60.. run scoreboard players reset @s gauntlet_timer
