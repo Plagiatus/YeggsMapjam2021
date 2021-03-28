@@ -48,5 +48,7 @@ execute store result score @s tmp run clear @s white_stained_glass_pane
 
 execute if score @s tmp matches 1 run tp @e[tag=build_preview,type=chest_minecart,limit=1,sort=nearest] ~ -100 ~
 execute if score @s tmp matches 1 run tag @s remove build_selection
+execute if score @s tmp matches 1 run playsound minecraft:entity.evoker.cast_spell master @s ~ ~ ~ 0.6 2
 
 execute if score @s build matches 1.. run tp @e[tag=build_preview,type=chest_minecart,limit=1,sort=nearest] ~ -100 ~
+execute if score @s build matches 1.. run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 0.4 2

@@ -67,6 +67,9 @@ function mana:build/upgrade/clear_all
 
 scoreboard players operation #current mana -= #upgrade upgrade_mana
 
+# playsound
+playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 0
+playsound minecraft:entity.illusioner.prepare_mirror master @s ~ ~ ~ 1 1.3
 
 # cleanup 
 kill @e[tag=preview,limit=1,sort=nearest]
