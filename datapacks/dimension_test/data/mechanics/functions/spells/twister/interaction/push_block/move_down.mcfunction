@@ -1,5 +1,5 @@
 tag @e[type=shulker,dx=0] add tmp
-execute unless block ~ ~-0.1 ~ air run tag @s remove move_down
+execute unless block ~ ~-0.1 ~ #mechanics:block_move_through run tag @s remove move_down
 execute positioned ~-0.5 ~-1.1 ~-0.5 if entity @e[type=shulker,tag=!tmp,limit=1,dx=0] run tag @s remove move_down
 tp @s[tag=move_down] ~ ~-0.1 ~
 tag @e[type=shulker,distance=..2] remove tmp
