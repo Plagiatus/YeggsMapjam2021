@@ -36,4 +36,4 @@ jobs:
           server: ${{ secrets.rcon_server }}
           port: ${{ secrets.rcon_port }}
           password: ${{ secrets.rcon_password }}
-          commands: '["minecraft:reload"]'
+          commands: '["reload"]'
