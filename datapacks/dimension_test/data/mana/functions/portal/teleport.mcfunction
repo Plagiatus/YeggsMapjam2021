@@ -19,3 +19,4 @@ tag @e[tag=tp_destination] remove tp_destination
 
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0 0.3 0 1 100
 execute at @s run playsound block.beacon.deactivate voice @s
+execute at @s run function mana:portal/teleport_additions

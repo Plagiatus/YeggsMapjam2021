@@ -20,3 +20,6 @@ execute as @a[tag=gauntlet_smash] at @s run function mechanics:gauntlet/smash/ma
 scoreboard players remove @a[scores={twister_timer=1..}] twister_timer 1
 
 scoreboard players reset @a cc
+
+# dimensions specific mechanics
+execute in dim:pink run function mechanics:dimensions/pink/main
