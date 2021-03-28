@@ -10,9 +10,9 @@ execute if score @s timer matches 60 run playsound block.wet_grass.place block @
 execute if score @s timer matches 80 run fill ~-1 ~3 ~ ~1 ~3 ~ twisting_vines
 execute if score @s timer matches 80 run particle composter ~ ~3 ~ 1 0.25 0.25 0 10 force
 execute if score @s timer matches 80 run playsound block.wet_grass.place block @a
-execute if score @s timer matches 90 run fill ~-1 ~4 ~ ~1 ~4 ~ twisting_vines
-execute if score @s timer matches 90 run particle composter ~ ~4 ~ 1 0.25 0.25 0 10 force
-execute if score @s timer matches 90 run playsound block.wet_grass.place block @a
-execute if score @s timer matches 100 run fill ~-1 ~5 ~ ~1 ~5 ~ twisting_vines
-execute if score @s timer matches 100 run particle composter ~ ~5 ~ 1 0.25 0.25 0 10 force
+execute if score @s timer matches 100 run fill ~-1 ~4 ~ ~1 ~4 ~ twisting_vines
+execute if score @s timer matches 100 run particle composter ~ ~4 ~ 1 0.25 0.25 0 10 force
 execute if score @s timer matches 100 run playsound block.wet_grass.place block @a
+execute if score @s timer matches 120 run fill ~-1 ~5 ~ ~1 ~5 ~ twisting_vines
+execute if score @s timer matches 120 run particle composter ~ ~5 ~ 1 0.25 0.25 0 10 force
+execute if score @s timer matches 120 run playsound block.wet_grass.place block @a
