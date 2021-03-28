@@ -1,6 +1,7 @@
 {
     "values": [
         "minecraft:air",
-        "minecraft:stone_brick_stairs"
+        "#minecraft:stairs",
+        "#minecraft:slabs"
     ]
 }
