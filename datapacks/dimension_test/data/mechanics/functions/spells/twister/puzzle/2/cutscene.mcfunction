@@ -10,3 +10,4 @@ execute if score @s timer matches 70 run playsound entity.villager.work_mason bl
 execute if score @s timer matches 100 run clone ~ ~ ~ ~2 ~2 ~ ~ ~1 ~ masked move
 execute if score @s timer matches 100 run particle dust 0.5 0.5 0.5 1 ~-7 ~9 ~12 1 0.25 0.25 0 10 force
 execute if score @s timer matches 100 run playsound entity.villager.work_mason block @a ~ ~ ~ 3 0.75
+
