@@ -3,7 +3,7 @@ scoreboard players add @s timer 1
 execute if entity @s[scores={timer=2}] at @a[x=0] run summon area_effect_cloud ~ ~ ~ {Duration:120,Tags:["puzzle_cam_reset"]}
 execute if entity @s[scores={timer=2}] at @a[x=0] run tp @e[type=area_effect_cloud,tag=puzzle_cam_reset] ~ ~0.5 ~ ~ ~
 
-execute if entity @s[scores={const=1,timer=30..118}] in dim:blue positioned -2 70 980 run function mechanics:spells/twister/puzzle/1/cutscene
+execute if entity @s[scores={const=1,timer=30..118}] in dim:blue positioned 2 74 999 run function mechanics:spells/twister/puzzle/1/cutscene
 
 execute if entity @s[scores={const=2,timer=30..118}] in dim:blue positioned 23 78 989 run function mechanics:spells/twister/puzzle/2/cutscene
 
