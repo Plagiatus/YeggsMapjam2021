@@ -4,6 +4,7 @@ execute at @s[tag=move] run function mechanics:spells/twister/interaction/push_b
 #Move Up/Down
 execute at @s[tag=!move] if block ~ ~-1 ~ light_gray_shulker_box[facing=down] run tag @s add move_up
 execute at @s[tag=!move] if block ~ ~1 ~ light_gray_shulker_box[facing=up] run tag @s add move_down
+execute at @s[tag=!move] if block ~ ~-1 ~ crying_obsidian run function mechanics:spells/twister/interaction/push_block/goal
 execute at @s[tag=move_up] run function mechanics:spells/twister/interaction/push_block/move_up
 execute at @s[tag=move_down] run function mechanics:spells/twister/interaction/push_block/move_down
 
