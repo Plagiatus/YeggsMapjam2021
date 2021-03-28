@@ -25,5 +25,7 @@ execute if score @s tmp matches 1 run scoreboard players set @s build 5
 
 execute store result score @s tmp run clear @s barrier
 execute if score @s tmp matches 1 run scoreboard players set @s build 99
+execute store result score @s tmp run clear @s sunflower
+execute if score @s tmp matches 1 run scoreboard players set @s build 100
 
 execute if score @s build matches 1.. run tp @e[tag=build_preview,type=chest_minecart,limit=1,sort=nearest] ~ -100 ~

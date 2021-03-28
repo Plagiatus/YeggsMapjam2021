@@ -6,7 +6,7 @@ execute if score @s build matches 2.. at @e[tag=preview,limit=1,sort=nearest] ru
 
 # TODO use actual blocks & create entities
 execute if score @s build matches 1 at @e[tag=preview,limit=1,sort=nearest] run fill ~ ~ ~ ~ ~2 ~ barrier
-execute if score @s build matches 1 at @e[tag=preview,limit=1,sort=nearest] run setblock ~ ~1 ~ sea_pickle[pickles=1]
+execute if score @s build matches 1 at @e[tag=preview,limit=1,sort=nearest] run setblock ~ ~1 ~ sea_pickle[pickles=1,waterlogged=false]
 execute if score @s build matches 2 at @e[tag=preview,limit=1,sort=nearest] run setblock ~ ~ ~ dead_fire_coral_fan[waterlogged=false]
 execute if score @s build matches 3 at @e[tag=preview,limit=1,sort=nearest] run setblock ~ ~ ~ dead_brain_coral_fan[waterlogged=false]
 execute if score @s build matches 4 at @e[tag=preview,limit=1,sort=nearest] run setblock ~ ~-1 ~ dead_horn_coral[waterlogged=false]

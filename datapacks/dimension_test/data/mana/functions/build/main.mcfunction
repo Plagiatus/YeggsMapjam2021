@@ -7,6 +7,7 @@ execute as @a[tag=building,scores={build=..0}] at @s run function mana:build/sel
 execute as @a[tag=building,scores={build=1..}] at @s run function mana:build/preview/main
 execute as @a[tag=building,scores={build=1..98,cc=1..}] at @s if entity @e[tag=preview,limit=1,distance=..10,type=armor_stand] run function mana:build/build
 execute as @a[tag=building,scores={build=99,cc=1..}] at @e[tag=preview,limit=1,type=area_effect_cloud] run function mana:build/remove
+execute as @a[tag=building,scores={build=100,cc=1..}] at @e[tag=preview,limit=1,type=area_effect_cloud] run function mana:build/upgrade
 scoreboard players set @a[tag=!building] build 0
 execute at @a[tag=!building,tag=build_selection] run tp @e[tag=build_preview,type=chest_minecart,limit=1,sort=nearest] ~ -100 ~
 tag @a[tag=!building] remove build_selection
