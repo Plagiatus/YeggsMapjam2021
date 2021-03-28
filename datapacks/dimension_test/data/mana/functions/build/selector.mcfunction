@@ -1,11 +1,12 @@
 
-execute as @s[tag=!build_selection] run summon chest_minecart ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"Choose a building"}',Tags:["build_preview"]}
-data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"sea_pickle",Count:1b,Slot:10b}
-data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_fire_coral_fan",Count:1b,Slot:12b}
-data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_brain_coral_fan",Count:1b,Slot:14b}
-data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_horn_coral",Count:1b,Slot:16b}
-data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_horn_coral_fan",Count:1b,Slot:18b}
-data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"barrier",Count:1b,Slot:26b}
+execute as @s[tag=!build_selection] run summon chest_minecart ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"Choose a building"}',Tags:["build_preview"],Invulnerable:1b}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"sea_pickle",Count:1b,Slot:9b,tag:{display:{Name:'{"italic":false,"text":"Connector","color":"light_purple"}'}}}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_fire_coral_fan",Count:1b,Slot:11b,tag:{display:{Name:'{"italic":false,"text":"Storage","color":"light_purple"}'}}}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_brain_coral_fan",Count:1b,Slot:13b,tag:{display:{Name:'{"italic":false,"text":"Generator","color":"light_purple"}'}}}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_horn_coral",Count:1b,Slot:15b,tag:{display:{Name:'{"italic":false,"text":"Extractor","color":"light_purple"}'}}}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"dead_horn_coral_fan",Count:1b,Slot:17b,tag:{display:{Name:'{"italic":false,"text":"Chunk Loader","color":"light_purple"}'}}}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"sunflower",Count:1b,Slot:21b,tag:{display:{Name:'{"italic":false,"text":"Upgrade","color":"green"}'}}}
+data modify entity @e[tag=build_preview,limit=1,sort=nearest] Items append value {id:"barrier",Count:1b,Slot:23b,tag:{display:{Name:'{"italic":false,"text":"Remove","color":"red"}'}}}
 
 tag @s add build_selection
 execute anchored eyes positioned ^ ^ ^ run tp @e[tag=build_preview,limit=1,sort=nearest] ~ ~-.5 ~
