@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+        "type": "minecraft:flat",
+        "seed": 586146726,
+        "settings": {
+            "biome": "dim:gray",
+            "features": true,
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 3
+                },
+                {
+                    "block": "minecraft:stone",
+                    "height": 200
+                },
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 3
+                }
+            ],
+            "structures": {
+                "structures": {}
+            }
+        }
+    }
+}
