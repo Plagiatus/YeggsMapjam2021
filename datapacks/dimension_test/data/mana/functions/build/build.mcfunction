@@ -26,6 +26,49 @@ execute as @e[tag=new] run function mana:values
 execute if score @s build matches 2.. as @e[tag=machine,tag=new,limit=1,sort=nearest] at @s run function mana:display/info
 tag @e[tag=new] remove new
 
+
+# cost
+execute if score @s build matches 1 run scoreboard players set #upgrade upgrade_mana 10
+execute if score @s build matches 1 run scoreboard players set #upgrade upgrade_wood 10
+execute if score @s build matches 1 run scoreboard players set #upgrade upgrade_iron 0
+execute if score @s build matches 1 run scoreboard players set #upgrade upgrade_gold 0
+execute if score @s build matches 1 run scoreboard players set #upgrade upgrade_lapis 0
+execute if score @s build matches 1 run scoreboard players set #upgrade upgrade_diamond 0
+
+execute if score @s build matches 2 run scoreboard players set #upgrade upgrade_mana 20
+execute if score @s build matches 2 run scoreboard players set #upgrade upgrade_wood 10
+execute if score @s build matches 2 run scoreboard players set #upgrade upgrade_iron 0
+execute if score @s build matches 2 run scoreboard players set #upgrade upgrade_gold 0
+execute if score @s build matches 2 run scoreboard players set #upgrade upgrade_lapis 0
+execute if score @s build matches 2 run scoreboard players set #upgrade upgrade_diamond 0
+
+execute if score @s build matches 3 run scoreboard players set #upgrade upgrade_mana 25
+execute if score @s build matches 3 run scoreboard players set #upgrade upgrade_wood 15
+execute if score @s build matches 3 run scoreboard players set #upgrade upgrade_iron 10
+execute if score @s build matches 3 run scoreboard players set #upgrade upgrade_gold 0
+execute if score @s build matches 3 run scoreboard players set #upgrade upgrade_lapis 0
+execute if score @s build matches 3 run scoreboard players set #upgrade upgrade_diamond 0
+
+execute if score @s build matches 4 run scoreboard players set #upgrade upgrade_mana 25
+execute if score @s build matches 4 run scoreboard players set #upgrade upgrade_wood 15
+execute if score @s build matches 4 run scoreboard players set #upgrade upgrade_iron 10
+execute if score @s build matches 4 run scoreboard players set #upgrade upgrade_gold 0
+execute if score @s build matches 4 run scoreboard players set #upgrade upgrade_lapis 0
+execute if score @s build matches 4 run scoreboard players set #upgrade upgrade_diamond 0
+
+execute if score @s build matches 5 run scoreboard players set #upgrade upgrade_mana 500
+execute if score @s build matches 5 run scoreboard players set #upgrade upgrade_wood 0
+execute if score @s build matches 5 run scoreboard players set #upgrade upgrade_iron 32
+execute if score @s build matches 5 run scoreboard players set #upgrade upgrade_gold 16
+execute if score @s build matches 5 run scoreboard players set #upgrade upgrade_lapis 5
+execute if score @s build matches 5 run scoreboard players set #upgrade upgrade_diamond 1
+
+function mana:build/upgrade/clear_all
+
+scoreboard players operation #current mana -= #upgrade upgrade_mana
+
+
+# cleanup 
 kill @e[tag=preview,limit=1,sort=nearest]
 scoreboard players set @s build 0
 scoreboard players set @s cc 0
