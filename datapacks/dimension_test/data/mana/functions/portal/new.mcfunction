@@ -1,1 +1,2 @@
 execute align xyz positioned ~.5 ~ ~.5 run summon armor_stand ~ ~ ~ {Invisible:1b, Invulnerable:1b, NoGravity: 1b, Tags:["portal","machine"],ArmorItems:[{},{},{},{id:"minecraft:crimson_fungus"}]}
+summon area_effect_cloud ~ ~1.5 ~ {Tags:["machine_display"],Duration:2000000000,CustomNameVisible:1b,CustomName:'" "'}
