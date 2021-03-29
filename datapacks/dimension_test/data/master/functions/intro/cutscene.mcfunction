@@ -29,7 +29,7 @@ execute if score @s timer matches 151 run gamemode spectator @a
 execute if score @s timer matches 155 run playsound entity.sheep.ambient neutral @a -110.9 87 2011.2 3
 execute if score @s timer matches 155..159 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] at @s run tp @s ~ ~ ~ ~5 ~
 execute if score @s timer matches 170 run summon falling_block -106 112 2022 {Time:-20,BlockState:{Name:"minecraft:light_blue_stained_glass"},Motion:[-0.5d,-3.0,-1.0d]}
-execute if score @s timer matches 175 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] run data merge entity @s {Motion:[-0.25d,0.5d,-0.5d]}
+execute if score @s timer matches 175 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] run data merge entity @s {Motion:[-0.5d,1.5d,-1.0d]}
 execute if score @s timer matches 175 run playsound entity.sheep.ambient neutral @a -110.9 87 2011.2 3 2
 execute if score @s timer matches 175..179 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] at @s run tp @s ~ ~ ~ ~20 ~
 
