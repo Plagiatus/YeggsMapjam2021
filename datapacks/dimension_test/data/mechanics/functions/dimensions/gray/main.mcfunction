@@ -1,0 +1,1 @@
+effect give @a[distance=0..] night_vision 10 0
