@@ -2,6 +2,7 @@ tag @s add init
 scoreboard players reset @s leave
 clear @s carrot_on_a_stick
 playsound minecraft:ambient.basalt_deltas.loop master @s ~ ~ ~ 10000 0.7
+gamemode adventure @s
 
 execute if score #status status matches 0 run tp @s -20 69 10
 execute if score #status status matches 1 run tp @s 1991 99 2004 180 -14
