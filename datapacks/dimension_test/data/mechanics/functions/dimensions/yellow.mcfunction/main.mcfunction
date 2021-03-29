@@ -1,1 +1,1 @@
-execute as @a at @s run tp @s[y=60,dy=20] 11 107 2978
+execute as @a[x=-124,y=50,z=2864,dx=200,dy=200,dz=210] at @s run tp @s[y=60,dy=20] 11 107 2978 0 0
