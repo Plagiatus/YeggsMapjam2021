@@ -30,6 +30,5 @@ execute in minecraft:overworld run function mechanics:dimensions/yellow/main
 execute in minecraft:overworld run function mechanics:dimensions/overworld/main
 execute in dim:gray run function mechanics:dimensions/gray/main
 
-# mana in inventory
-execute as @a store result score @s tmp run clear @s scute
-execute as @a run scoreboard players operation #current mana += @s tmp
+# crystals
+function mechanics:crystals/main
