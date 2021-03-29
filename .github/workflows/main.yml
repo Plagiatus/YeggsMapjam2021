@@ -29,8 +29,7 @@ jobs:
           username:  ${{ secrets.plag_ftp_username }}
           password: ${{ secrets.plag_ftp_password }}
           server-dir: map_jam/
-          exclude: 
-            - datapacks/empty_advancements/**
+          exclude: datapacks/empty_advancements/**
             - resourcepack/**
       # informs the players and reloads
       - name: RCON Connection 🔌
