@@ -9,7 +9,7 @@ execute as @e[tag=portal,tag=!tp_origin] if score @s portal_id = #id portal_id r
 execute at @e[tag=tp_destination,limit=1] run tp @s ~ ~ ~
 
 #TODO fallback for when no destination can be found
-execute unless entity @e[tag=tp_destination,limit=1] if score @s portal_id matches 4 in dim:pink run tp @s 0 32 0
+execute unless entity @e[tag=tp_destination,limit=1] if score @e[tag=tp_origin,limit=1] portal_id matches 4 in dim:pink run tp @s 0 32 0
 
 tag @s remove tpme
 tag @e[tag=tp_origin] remove tp_origin
