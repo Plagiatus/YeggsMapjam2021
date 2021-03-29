@@ -2,7 +2,7 @@
 execute positioned ~ ~-0.25 ~ as @e[distance=..0.75,type=armor_stand,tag=push_block,tag=!move,tag=!move_up,tag=!move_down,limit=1,sort=nearest] run function mechanics:spells/twister/interaction/push_block/determine_direction
 execute positioned ~ ~-0.25 ~ if entity @e[distance=..0.75,type=armor_stand,tag=push_block,limit=1] run function mechanics:spells/twister/kill
 
-execute positioned ~ ~-0.25 ~ at @e[distance=..0.75,type=!armor_stand,type=!player,limit=1,sort=nearest] run function mechanics:spells/twister/interaction/entity/hit
+execute positioned ~ ~-0.25 ~ at @e[distance=..0.75,type=!armor_stand,type=!player,tag=!cloud_sheep,limit=1,sort=nearest] run function mechanics:spells/twister/interaction/entity/hit
 
 #Sound
 scoreboard players add @s timer 1
