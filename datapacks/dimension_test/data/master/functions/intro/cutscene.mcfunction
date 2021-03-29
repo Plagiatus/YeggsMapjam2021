@@ -38,6 +38,7 @@ execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectat
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.chest golden_chestplate{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.legs golden_leggings{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.feet golden_boots{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
+execute if score @s timer matches 200 run give @a[gamemode=spectator] oak_log 20
 execute if score @s timer matches 200 run gamemode adventure @a[gamemode=spectator]
 execute if score @s timer matches 200 run playsound minecraft:ambient.basalt_deltas.mood master @a 1990 99 2003 1 0.8
 execute if score @s timer matches 201 run kill @s
