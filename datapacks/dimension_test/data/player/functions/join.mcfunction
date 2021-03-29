@@ -1,5 +1,6 @@
 tag @s add init
 scoreboard players reset @s leave
+clear @s carrot_on_a_stick
 playsound minecraft:ambient.basalt_deltas.loop master @s ~ ~ ~ 10000 0.7
 
 execute if score #status status matches 0 run tp @s -20 69 10
