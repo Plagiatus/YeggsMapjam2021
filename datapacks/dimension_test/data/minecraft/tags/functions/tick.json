@@ -1,6 +1,8 @@
 {
     "values": [
         "mana:main",
-        "mechanics:main"
+        "mechanics:main",
+        "master:main",
+        "player:main"
     ]
 }
