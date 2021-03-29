@@ -2,6 +2,7 @@
     "values": [
         "mana:main",
         "mechanics:main",
-        "master:main"
+        "master:main",
+        "player:main"
     ]
 }

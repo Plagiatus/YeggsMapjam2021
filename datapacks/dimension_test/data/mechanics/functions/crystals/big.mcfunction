@@ -15,9 +15,9 @@ execute if score #recovered broke_crystal matches 0..5 in minecraft:overworld ru
 execute if score #recovered broke_crystal matches 0..6 in minecraft:overworld run particle witch 1991 102 1988 2.5 2.5 2.5 1 1000
 execute if score #recovered broke_crystal matches 0..6 in minecraft:overworld run particle happy_villager 1991 102 1988 2.5 2.5 2.5 1 50
 
-execute if entity @s[x=2005,y=101,z=2007,distance=..10] as @a run function mechanics:spell/water/give
-execute if entity @s[x=37,y=32,z=-2,distance=..10] as @a run function mechanics:spell/launch/give
-execute if entity @s[x=21,y=142,z=2962,distance=..10] as @a run function mechanics:spell/twister/give
+execute if entity @s[x=2005,y=101,z=2007,distance=..10] as @a run function mechanics:spells/water/give
+execute if entity @s[x=37,y=32,z=-2,distance=..10] as @a run function mechanics:spells/launch/give
+execute if entity @s[x=21,y=142,z=2962,distance=..10] as @a run function mechanics:spells/twister/give
 execute if entity @s[x=60,y=90,z=1020,distance=..10] as @a run function mechanics:gauntlet/give
 
 
