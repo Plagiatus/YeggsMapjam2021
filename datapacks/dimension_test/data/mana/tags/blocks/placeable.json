@@ -2,8 +2,10 @@
     "values": [
         "stone",
         "andesite",
-        "dirt",
         "grass_block",
-        "purpur_block"
+        "purpur_block",
+        "cobblestone",
+        "mycelium",
+        "dirt"
     ]
 }
