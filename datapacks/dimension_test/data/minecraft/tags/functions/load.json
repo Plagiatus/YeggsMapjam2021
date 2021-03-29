@@ -3,6 +3,7 @@
         "master:load",
         "ui:load",
         "mechanics:load",
-        "mana:load"
+        "mana:load",
+        "player:load"
     ]
 }
