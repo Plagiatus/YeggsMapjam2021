@@ -10,4 +10,4 @@ execute if score @s const matches 6 run function mechanics:spells/twister/puzzle
 execute if score @s const matches 7 run function mechanics:spells/twister/puzzle/7/solved
 execute if score @s const matches 8 run function mechanics:spells/twister/puzzle/8/solved
 execute if score @s const matches 9 run function mechanics:spells/twister/puzzle/9/solved
-execute if score @s const matches 10 run function mechanics:spells/twister/puzzle/10/solved
+execute if score @s const matches 10 run function mechanics:spells/twister/puzzle/lobby/solved
