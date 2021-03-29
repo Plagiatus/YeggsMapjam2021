@@ -20,7 +20,10 @@ execute if score @s timer matches 119 run summon falling_block -2 96 1997 {Time:
 
 #Part 2: landing:
 execute if score @s timer matches 120 run kill @e[type=sheep,tag=intro_mob]
-execute if score @s timer matches 120 run summon sheep -110.9 87 2011.2 {Color:4b,Rotation:[141.5f,19.8f],Tags:["intro_mob"]}
+execute if score @s timer matches 120 run setblock -110 87 2014 air
+execute if score @s timer matches 120 run gamemode adventure @a
+execute if score @s timer matches 121 run gamemode spectator @a
+execute if score @s timer matches 121 run summon sheep -110.9 87 2011.2 {Color:4b,Rotation:[141.5f,19.8f],Tags:["intro_mob"]}
 execute if score @s timer matches 150 run tp @s -103.864 89.494 2006.628
 execute if score @s timer matches 155 run playsound entity.sheep.ambient neutral @a -110.9 87 2011.2 3
 execute if score @s timer matches 155..159 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] at @s run tp @s ~ ~ ~ ~5 ~
@@ -29,10 +32,10 @@ execute if score @s timer matches 175 as @e[type=sheep,tag=intro_mob,x=-110,y=87
 execute if score @s timer matches 175 run playsound entity.sheep.ambient neutral @a -110.9 87 2011.2 3 2
 execute if score @s timer matches 175..179 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] at @s run tp @s ~ ~ ~ ~20 ~
 
-execute if score @s timer matches 200 run tp @a 2000 100 2000
+execute if score @s timer matches 200 run tp @a 1990 99 2003
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.head white_dye{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.chest golden_chestplate{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.legs golden_leggings{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.feet golden_boots{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run gamemode adventure @a[gamemode=spectator]
-execute if score @s timer matches 200 run playsound minecraft:ambient.basalt_deltas.mood master @a 2000 100 2000 1 0.8
+execute if score @s timer matches 200 run playsound minecraft:ambient.basalt_deltas.mood master @a 1990 99 2003 1 0.8
