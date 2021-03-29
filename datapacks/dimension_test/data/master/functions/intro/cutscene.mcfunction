@@ -2,7 +2,7 @@ scoreboard players add @s timer 1
 execute at @a[gamemode=spectator] run spectate @s @p
 
 #Part 1: exploding:
-
+execute if score @s timer matches 1 run function master:intro/reset
 execute if score @s timer matches 20 run particle flash -2 92 2001 0 0 0 2 1 force
 execute if score @s timer matches 60 run particle flash -2 92 2001 0 0 0 2 2 force
 execute if score @s timer matches 80 run particle flash -2 92 2001 0.25 0.25 0.25 2 2 force
@@ -19,6 +19,7 @@ execute if score @s timer matches 119 run summon falling_block -2 96 1997 {Time:
 
 
 #Part 2: landing:
+execute if score @s timer matches 120 run kill @e[type=sheep,tag=intro_mob]
 execute if score @s timer matches 120 run summon sheep -110.9 87 2011.2 {Color:4b,Rotation:[141.5f,19.8f],Tags:["intro_mob"]}
 execute if score @s timer matches 150 run tp @s -103.864 89.494 2006.628
 execute if score @s timer matches 155 run playsound entity.sheep.ambient neutral @a -110.9 87 2011.2 3
@@ -34,3 +35,4 @@ execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectat
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.legs golden_leggings{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run replaceitem entity @a[gamemode=spectator] armor.feet golden_boots{Unbreakable:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if score @s timer matches 200 run gamemode adventure @a[gamemode=spectator]
+execute if score @s timer matches 200 run playsound minecraft:ambient.basalt_deltas.mood master @a 2000 100 2000 1 0.8
