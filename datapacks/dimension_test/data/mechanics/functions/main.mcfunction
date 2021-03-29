@@ -26,4 +26,5 @@ execute as @e[type=area_effect_cloud,tag=puzzle_cam,limit=1,sort=nearest] at @s 
 
 # dimensions specific mechanics
 execute in dim:pink run function mechanics:dimensions/pink/main
-execute in dim:yellow run function mechanics:dimensions/yellow/main
+execute in minecraft:overworld run function mechanics:dimensions/yellow/main
+execute in minecraft:overworld run function mechanics:dimensions/overworld/main
