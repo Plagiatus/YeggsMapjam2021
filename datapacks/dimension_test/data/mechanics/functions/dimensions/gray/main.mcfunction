@@ -1,1 +1,1 @@
-effect give @a[distance=0..] night_vision 10 0 true
+effect give @a[distance=0..] night_vision 15 0 true
