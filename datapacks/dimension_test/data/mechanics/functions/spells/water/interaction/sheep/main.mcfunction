@@ -16,7 +16,7 @@ execute if score @s timer matches 300 run function mechanics:spells/water/intera
 execute if score @s timer matches 400 run function mechanics:spells/water/interaction/sheep/ambient
 execute if score @s timer matches 500 run function mechanics:spells/water/interaction/sheep/ambient
 
-execute if score @s timer matches 45.. run execute positioned ~-2 ~-1 ~-2 run effect give @a[dx=3,dy=2,dz=3] levitation 1 20 true
+execute if score @s timer matches 45..500 run execute positioned ~-2 ~-1 ~-2 run effect give @a[dx=3,dy=2,dz=3] levitation 1 20 true
 
 
 execute if score @s timer matches 500 run function mechanics:spells/water/interaction/sheep/deflate

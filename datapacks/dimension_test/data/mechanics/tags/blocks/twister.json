@@ -6,6 +6,10 @@
         "#minecraft:slabs",
         "minecraft:purple_stained_glass",
         "minecraft:tripwire",
-        "minecraft:gray_carpet"
+        "minecraft:gray_carpet",
+        "minecraft:twisting_vines",
+        "minecraft:grass",
+        "minecraft:nether_sprouts",
+        "#minecraft:signs"
     ]
 }
