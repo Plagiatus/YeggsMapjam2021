@@ -19,13 +19,13 @@ execute if score @s timer matches 119 run summon falling_block -2 96 1997 {Time:
 
 
 #Part 2: landing:
-execute if score @s timer matches 120 run kill @e[type=sheep,tag=intro_mob]
+execute if score @s timer matches 120 run tp @e[type=sheep,tag=intro_mob] ~ ~-200 ~
 execute if score @s timer matches 120 run setblock -110 87 2014 air
-execute if score @s timer matches 120 run gamemode adventure @a
-execute if score @s timer matches 121 run gamemode spectator @a
 execute if score @s timer matches 121 run summon sheep -110.9 87 2011.2 {Color:4b,Rotation:[141.5f,19.8f],Tags:["intro_mob"]}
-execute if score @s timer matches 150 run tp @s -103.864 89.494 2006.628
+execute if score @s timer matches 150 run tp @s -103.864 89.494 2006.628 49 25
+execute if score @s timer matches 150 run gamemode adventure @a
 execute if score @s timer matches 151 run data merge entity @s {Air:2s}
+execute if score @s timer matches 151 run gamemode spectator @a
 execute if score @s timer matches 155 run playsound entity.sheep.ambient neutral @a -110.9 87 2011.2 3
 execute if score @s timer matches 155..159 as @e[type=sheep,tag=intro_mob,x=-110,y=87,z=211] at @s run tp @s ~ ~ ~ ~5 ~
 execute if score @s timer matches 170 run summon falling_block -106 112 2022 {Time:-20,BlockState:{Name:"minecraft:light_blue_stained_glass"},Motion:[-0.5d,-3.0,-1.0d]}
