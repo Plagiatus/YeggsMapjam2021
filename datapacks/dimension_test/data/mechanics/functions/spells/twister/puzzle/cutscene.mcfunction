@@ -18,7 +18,7 @@ execute if entity @s[scores={const=8,timer=30..118}] in dim:blue positioned 55 7
 
 execute if entity @s[scores={const=9,timer=30..118}] in dim:blue positioned 70 84 1028 run function mechanics:spells/twister/puzzle/9/cutscene
 
-execute if entity @s[scores={const=9,timer=30..118}] in minecraft:overworld positioned 1934 99 2017 run function mechanics:spells/twister/puzzle/lobby/cutscene
+execute if entity @s[scores={const=10,timer=30..118}] in minecraft:overworld positioned 1934 99 2017 run function mechanics:spells/twister/puzzle/lobby/cutscene
 
 execute if entity @s[scores={timer=118}] as @a[x=0] run tp @s @e[type=area_effect_cloud,tag=puzzle_cam_reset,limit=1,sort=nearest]
 execute if entity @s[scores={timer=118}] run gamemode adventure @a[x=0]
