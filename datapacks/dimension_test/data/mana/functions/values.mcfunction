@@ -36,7 +36,15 @@
 
     # portal
     scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=1}] mana 1
-    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=1}] cooldown 10
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=1}] cooldown 20
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=2}] mana 1
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=2}] cooldown 10
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=3}] mana 1
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=3}] cooldown 8
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=4}] mana 1
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=4}] cooldown 10
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=5}] mana 1
+    scoreboard players set @s[tag=portal,tag=origin,scores={portal_id=5}] cooldown 4
 
 # upgrade cost
     # generator
